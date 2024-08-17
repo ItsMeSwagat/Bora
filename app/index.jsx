@@ -1,4 +1,4 @@
-import { Link } from "expo-router";
+import { Redirect, router } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { Image, ScrollView, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -8,8 +8,8 @@ import CustomButton from "../components/CustomButton";
 export default function App() {
   return (
     <SafeAreaView className=" bg-primary h-full">
-      <ScrollView contentContainerStyle={{ height: "auto" }}>
-        <View className="w-full h-full justify-center items-center px-4 py-4">
+      <ScrollView contentContainerStyle={{ height: "100%" }}>
+        <View className="w-full min-h-[85vh] justify-center items-center px-4">
           <Image
             source={images.logo}
             className=" w-[150px] h-[85px]"
@@ -42,12 +42,13 @@ export default function App() {
 
             <CustomButton
               title="LETS GO"
-              handlePress={() => {}}
+              handlePress={() => router.push('/login')}
               containerStyles=" w-full mt-8"
             />
           </View>
         </View>
       </ScrollView>
+      <StatusBar backgroundColor="#161622" style="light" />
     </SafeAreaView>
   );
 }
