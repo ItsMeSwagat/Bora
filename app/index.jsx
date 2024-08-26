@@ -25,7 +25,7 @@ export default function App() {
           <View className=" mt-8">
             <Text className=" font-pbold text-3xl text-center text-white">
               Discover Endless Possibilities with{" "}
-              <Text className=" text-secondary-200">Bora</Text>
+              <Text className=" text-secondary-200">Aora</Text>
             </Text>
 
             <Image
@@ -37,7 +37,7 @@ export default function App() {
           <View className=" w-full items-center mt-10">
             <Text className=" text-center text-gray-100 text-[18px]">
               Where Creativity Meets Innovation: Embark on a Journey of
-              Limitless Exploration with Bora
+              Limitless Exploration with Aora
             </Text>
 
             <CustomButton
